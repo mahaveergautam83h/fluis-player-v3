@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Fluid Player</title>
+		<link rel="stylesheet" href="http://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css"/>
+		<script src="http://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
+	</head>
+	<body>
+
+		<video id='my-video' controls style="width: 640px; height: 360px;">
+			<source data-fluid-hd src='https://drive.google.com/file/d/12EOs6HrsL7zx5Asn6PPlIks6dl1kaIva/view?usp=drivesdk' title='1080p' type='video/mp4' />
+			<source data-fluid-hd src='https://drive.google.com/file/d/12EOs6HrsL7zx5Asn6PPlIks6dl1kaIva/view?usp=drivesdk' title='720p' type='video/mp4' />
+			<source src='https://drive.google.com/file/d/12EOs6HrsL7zx5Asn6PPlIks6dl1kaIva/view?usp=drivesdk' title='480p' type='video/mp4' />         
+		</video>
+
+	</body>
+  <script>
+    fluidPlayer(
+	'my-video',
+	{
+		layoutControls: {
+			primaryColor: "#28B8ED"
+		},
+		layoutControls: {
+			allowDownload: true // Default false
+		},		
+	}
+);</script>
+</html>
